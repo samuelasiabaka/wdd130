@@ -1,51 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 nav {
-    padding-left: 1rem;
-    background-color: #eee;
+  padding-left: 1rem;
+  background-color: #eee;
 }
 
 nav a {
-    color: #000;
-    padding: 0.5rem;
-    display: inline-block;
+  color: #000;
+  padding: 0.5rem;
+  display: inline-block;
 }
 
 main {
-    max-width: 840px;
-    padding-left: 1rem;
+  max-width: 840px;
+  padding-left: 1rem;
 }
 
 main img {
-    width: 150px;
-    height: auto;
-    padding: 1px;
-    box-shadow: 30px 20px 30px #333;
-    border: 0.5px solid rgb(0 0 0 /0.2);
+  width: 150px;
+  height: auto;
+  padding: 1px;
+  box-shadow: 30px 20px 30px #333;
+  border: 0.5px solid rgb(0 0 0 /0.2);
+  float: right;
 }
 
 h1 {
-    color: #000;
+  color: #000;
 }
 
 aside {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 /0.2);
-    padding: 1rem;
-    background-color: #eee;
-    text-align: center;
+  width: 20rem;
+  margin: 1rem;
+  border: 1px solid rgb(0 0 0 /0.2);
+  padding: 1rem;
+  background-color: #eee;
+  text-align: center;
+  position: relative;
 }
 
 aside img {
-    width: 200px;
-    height: auto;
+  width: 200px;
+  height: auto;
+}
+
+aside h2 {
+  position: absolute;
+  top: 15px;
+  left: 100px;
 }
 
 p {
-    padding: 0;
+  padding: 0;
 }
 
 footer {
-    margin-top: 15px;
-    border-top: 1px solid #000;
-    text-align: center;
+  margin-top: 15px;
+  border-top: 1px solid #000;
+  text-align: center;
+}
+
+/* Class Selector */
+
+.box {
+  margin: 1rem;
+  border: 1px solid rgb(0 0 0 / 10%);
+  padding: 1rem;
+  background-color: #ddd;
+  color: #000;
 }
