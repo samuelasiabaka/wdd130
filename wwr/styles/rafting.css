@@ -26,10 +26,17 @@ footer {
   margin: 0 auto;
 }
 
-h1,
-h2 {
-  font-family: var(--heading-font);
-  color: var(--primary-color);
+header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  padding: 10px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
 }
 
 nav a {
@@ -43,16 +50,15 @@ nav a:hover {
   text-decoration: underline;
 }
 
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 0;
-}
-
 header img {
   width: 150px;
   height: auto;
+}
+
+h1,
+h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
 }
 
 p,
@@ -107,6 +113,18 @@ h1 {
   padding: 0;
 }
 
+.history-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.history-content img {
+  width: 100%;
+  height: auto;
+}
+
 section h2 {
   text-align: center;
   background-color: var(--primary-color);
@@ -121,6 +139,27 @@ section p {
 
 section:last-of-type {
   min-height: 100px;
+}
+
+.adventure-gallery {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.adventure-gallery figure {
+  text-align: center;
+}
+
+.adventure-gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.adventure-gallery figcaption {
+  font-size: 0.9rem;
+  margin-top: 5px;
 }
 
 footer {
