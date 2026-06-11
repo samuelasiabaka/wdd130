@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <meta
+      name="description"
+      content="This is the contact page for our fictional rafting company"
+    />
+    <meta name="author" content="Samuel Chinedu Asiabaka" />
+    <link rel="stylesheet" href="styles/rafting.css" />
+  </head>
+  <body>
+    <header>
+      <img src="images/logo.jpg" alt="Rafting Company Logo" />
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="trips.html">Trips</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- COMPANY CONTACT INFO -->
+      <section class="contact-info">
+        <h1>The Rapids</h1>
+        <address>
+          <p>11 Mosunmola Ariyo Close</p>
+          <p>Egbeda, Lagos</p>
+          <p>+234 7054063569</p>
+          <p>info@therapids.com</p>
+        </address>
+      </section>
+
+      <!-- MAP and CONTACT FORM -->
+      <section class="contact-container">
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d26663.48232768297!2d3.290976618573677!3d6.578286630306019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1781211291455!5m2!1sen!2sng"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <fieldset>
+            <legend>Message Purpose</legend>
+
+            <label>
+              <input type="radio" name="purpose" value="general" checked />
+              General Inquiry
+            </label>
+
+            <label>
+              <input type="radio" name="purpose" value="reservation" />
+              Reservation Question
+            </label>
+
+            <label>
+              <input type="radio" name="purpose" value="website" />
+              Website Suggestion
+            </label>
+          </fieldset>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+
+          <label class="checkbox">
+            <input type="checkbox" name="newsletter" />
+            Please subscribe me to the monthly newsletter
+          </label>
+
+          <button type="submit">Get in Touch!</button>
+        </form>
+      </section>
+
+      <!-- EMPLOYEE SECTION -->
+      <section class="employees">
+        <h2>We Are Here to Serve You</h2>
+
+        <div class="employee-gallery">
+          <figure>
+            <img src="images/employee1.jpg" alt="Sarah Johnson - Guide" />
+            <figcaption>Sarah Johnson - Senior Guide</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src="images/employee2.jpg"
+              alt="Michael Brown - Trip Manager"
+            />
+            <figcaption>Michael Brown - Trip Manager</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src="images/employee3.jpg"
+              alt="Emily Davis - Customer Service"
+            />
+            <figcaption>Emily Davis - Customer Service</figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 ✨ The Rapids | Samuel Chinedu Asiabaka</p>
+      <nav class="socialmedia">
+        <a href="https://facebook.com"
+          ><img src="images/facebook.png" alt="Facebook"
+        /></a>
+        <a href="https://www.linkedin.com/"
+          ><img src="images/linkedin.png" alt="Linkedin"
+        /></a>
+        <a href="https://instagram.com"
+          ><img src="images/instagram.png" alt="Instagram"
+        /></a>
+      </nav>
+    </footer>
+  </body>
+</html>
